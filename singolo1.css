@@ -74,6 +74,13 @@ body {
 .iphone {
     position: relative;
     z-index: 10;
+    border-radius: 24px;
+    box-shadow: 25px 25px #ce5d56, 20px 20px #ce5d56, 15px 15px #ce5d56, 10px 10px #ce5d56, 5px 5px #ce5d56;
+}
+
+.iphone_horizontal {
+    border-radius: 24px;
+    box-shadow: 25px -25px #ce5d56, 20px -20px #ce5d56, 15px -15px #ce5d56, 10px -10px #ce5d56, 5px -5px #ce5d56;
 }
 
 .iphone__display {
