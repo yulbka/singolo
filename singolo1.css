@@ -25,6 +25,18 @@ body {
     justify-content: space-between;
 }
 
+.services__wrapper {
+   
+}
+
+.layout-3-column {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 1020px;      
+}
+
 .header {
     background-color: #2d303a;
     padding: 0 35px;
@@ -90,9 +102,7 @@ body {
     overflow: hidden;
     z-index: 20;
     top: 65px;
-    left: 14px;
-    
-    
+    left: 14px;     
 }
 
 .iphone__display_horizontal {
@@ -100,8 +110,7 @@ body {
     width: 333px;
     height: 188px;
     top: 138px;
-    left: -59px;
-    
+    left: -59px;    
 }
 
 .iphone_horizontal {
@@ -132,4 +141,79 @@ body {
 
 .arrow_next {
     rotate: 225deg;
+}
+
+.service {
+    display: flex;
+    width: 340px;
+}
+
+.service__text {
+    width: 250px;
+    height: 125px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.services {
+    background-color: #f2f2f2;
+    padding: 68px 40px;
+    border-bottom: 6px #ffffff;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #666d89;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #666d89;
+}
+
+.services p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2;
+    color: #767e9e;
+}
+
+.service p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666d89;
+}
+
+.icon {
+    display: block;
+    width: 62px;
+    height: 62px;
+    padding-right: 20px; 
+    margin-top: 15px;
+}
+
+.icon_pen {
+    background: url(assets/images/pen.svg) no-repeat;
+}
+
+.icon_phone {
+    background: url(assets/images/phone.svg) no-repeat;
+}
+
+.icon_bulb {
+    background: url(assets/images/bulb.svg) no-repeat;
+}
+
+.icon_bubble {
+    background: url(assets/images/bubble.svg) no-repeat;
+}
+
+.icon_heart {
+    background: url(assets/images/heart.svg) no-repeat;
+}
+
+.icon_star {
+    background: url(assets/images/star.svg) no-repeat;
 }
