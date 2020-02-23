@@ -113,7 +113,7 @@ body {
 }
 
 .iphone__display_horizontal {
-    rotate: -90deg;
+    transform: rotate(-90deg);
     width: 333px;
     height: 188px;
     top: 138px;
@@ -121,7 +121,7 @@ body {
 }
 
 .iphone_horizontal {
-    rotate: 90deg;
+    transform: rotate(90deg);
 }
 
 .display-image1 {
@@ -149,11 +149,11 @@ body {
 }
 
 .arrow_prev {
-    rotate: 45deg;
+    transform: rotate(45deg)
 }
 
 .arrow_next {
-    rotate: 225deg;
+    transform: rotate(225deg);
 }
 
 .service {
