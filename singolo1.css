@@ -13,16 +13,22 @@ body {
     margin: auto;
 }
 
-.header {
-    background-color: #2d303a;
-    padding: 0 35px;
-    border-bottom: #323746 7px;
-}
-
 .header__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.slider__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: #2d303a;
+    padding: 0 35px;
+    border-bottom: #323746 7px;
 }
 
 .logo h1 {
@@ -57,4 +63,66 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     padding: 10px;
+}
+
+.slider {
+    background-color: #f06c64;
+    padding: 50px 10px;
+    border-bottom: #ea676b 14px;
+}
+
+.iphone {
+    position: relative;
+    z-index: 10;
+}
+
+.iphone__display {
+    position: absolute;
+    width: 188px;
+    height: 333px;
+    overflow: hidden;
+    z-index: 20;
+    top: 65px;
+    left: 14px;
+    
+    
+}
+
+.iphone__display_horizontal {
+    rotate: -90deg;
+    width: 333px;
+    height: 188px;
+    top: 138px;
+    left: -59px;
+    
+}
+
+.iphone_horizontal {
+    rotate: 90deg;
+}
+
+.display-image1 {
+    margin-top: -133px;
+    margin-left: -14px;
+}
+
+.display-image2 {
+    margin-top: -119px;
+    margin-left: -125px;
+}
+
+.arrow {
+    border: 1px solid #f06c64;
+    border-bottom: 4px solid #ca4549;
+    border-left: 4px solid #ca4549;
+    padding: 10px;
+    background-color: #f06c64;
+}
+
+.arrow_prev {
+    rotate: 45deg;
+}
+
+.arrow_next {
+    rotate: 225deg;
 }
