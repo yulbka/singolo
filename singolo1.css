@@ -15,32 +15,31 @@ body {
 
 .header__wrapper {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
+    padding: 14px 0 15px 0;
 }
 
 .slider__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
 }
 
 .services__wrapper {
-   
+    padding: 35px 0 73px 78px;
 }
 
 .layout-3-column {
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 1020px;      
+    flex-flow: row wrap;         
 }
 
 .header {
     background-color: #2d303a;
-    padding: 0 35px;
-    border-bottom: #323746 7px;
+    border-bottom: #323746 5.5px solid;
+}
+
+.logo {
+    padding-left: 38px;
 }
 
 .logo h1 {
@@ -54,11 +53,13 @@ body {
 }
 
 .header__navigation {
-    display: flex;
+    width: 383px;
+    padding-right: 82px;
 }
 
 .navigation {
     display: flex;
+    justify-content: space-between;
     list-style: none;
 }
 .navigation li:not(:first-child):before {
@@ -76,7 +77,7 @@ body {
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: 700;
-    padding: 10px;
+    padding: 0 13px;
 }
 
 .navigation a:hover {
@@ -86,11 +87,19 @@ body {
 
 .slider {
     background-color: #f06c64;
-    padding: 50px 10px;
-    border-bottom: #ea676b 14px;
+    padding: 52px 0 73px 0;
+    border-bottom: #ea676b 14px solid;
 }
 
-.iphone {
+.iphone__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 649px;
+    padding-left: 112px;
+}
+
+.iphone_vertical {
     position: relative;
     z-index: 10;
     border-radius: 24px;
@@ -98,6 +107,9 @@ body {
 }
 
 .iphone_horizontal {
+    position: relative
+    z-index: 10;
+    transform: rotate(90deg);
     border-radius: 24px;
     box-shadow: 25px -25px #ce5d56, 20px -20px #ce5d56, 15px -15px #ce5d56, 10px -10px #ce5d56, 5px -5px #ce5d56;
 }
@@ -108,7 +120,7 @@ body {
     height: 333px;
     overflow: hidden;
     z-index: 20;
-    top: 65px;
+    top: 64px;
     left: 14px;     
 }
 
@@ -118,10 +130,6 @@ body {
     height: 188px;
     top: 138px;
     left: -59px;    
-}
-
-.iphone_horizontal {
-    transform: rotate(90deg);
 }
 
 .display-image1 {
@@ -138,8 +146,10 @@ body {
     border: 1px solid #f06c64;
     border-bottom: 4px solid #ca4549;
     border-left: 4px solid #ca4549;
-    padding: 10px;
     background-color: #f06c64;
+    position: absolute;
+    padding: 7px;
+    top: 233px;
 }
 
 .arrow:hover {
@@ -149,32 +159,34 @@ body {
 }
 
 .arrow_prev {
-    transform: rotate(45deg)
+    transform: rotate(45deg);
+    left: 46px;
 }
 
 .arrow_next {
     transform: rotate(225deg);
+    right: 44px;
 }
 
 .service {
     display: flex;
-    width: 340px;
+    width: 320px;
 }
 
+
 .service__text {
-    width: 250px;
-    height: 125px;
+    width: 235px;
+    height: 122px;
     overflow: hidden;
-    margin-bottom: 20px;
 }
 
 .services {
     background-color: #f2f2f2;
-    padding: 68px 40px;
-    border-bottom: 6px #ffffff;
+    border-bottom: 6px solid #ffffff;    
 }
 
 h2 {
+    margin-bottom: 0;
     font-size: 3rem;
     font-weight: 900;
     color: #666d89;
@@ -184,12 +196,14 @@ h3 {
     font-size: 1.8rem;
     font-weight: 900;
     color: #666d89;
+    padding-top: 6px;
+    margin-bottom: -3px;
 }
 
 .services p {
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 2;
+    line-height: 1.75;
     color: #767e9e;
 }
 
@@ -201,10 +215,9 @@ h3 {
 
 .icon {
     display: block;
-    width: 62px;
-    height: 62px;
-    padding-right: 20px; 
-    margin-top: 15px;
+    width: 62px;    
+    margin-top: 27px;
+    padding: 9px;
 }
 
 .icon_pen {
