@@ -69,7 +69,7 @@ body {
 
 .button:hover {
   cursor: pointer;
-  border: 1px solid #0aeeee;
+  border: 1px solid #95b0dd;
   transition-delay: 0.1s; 
 }
 
