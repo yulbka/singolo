@@ -14,13 +14,13 @@ body {
 } 
 
 .portfolio {
-  padding: 45px 0px 35px 78px;
+  padding: 45px 0px 55px 78px;
   background-color: #2d303a;
-  border-bottom: 8px solid #323746;
+  border-bottom: 6px solid #323746;
 }
 
 .portfolio__title {  
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   font-size: 3rem;
   line-height: 15px;
   font-weight: 900;
@@ -28,7 +28,7 @@ body {
 }
 
 .portfolio__text {
-  margin: 10px 0;  
+  margin-bottom: 12px;  
   font-size: 1.8rem;
   line-height: 32px;
   font-weight: 300;
@@ -36,13 +36,13 @@ body {
 }
 
 .filter {
-  display: flex;
-  width: 290px;
+  display: flex;  
   justify-content: space-between;
+  width: 290px;
 }
 
 .portfolio__filter {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
 .filter__button {
@@ -70,10 +70,11 @@ body {
 .button:hover {
   cursor: pointer;
   border: 1px solid #0aeeee;
+  transition-delay: 0.1s; 
 }
 
 .layout-4-column {
-  display: flex;
+  display: flex;  
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -84,6 +85,107 @@ body {
 }
 
 .portfolio__image {
-  margin: 7px 18px 13px 0;
+  margin: 7px 19px 13px 1px;
+}
+
+.about-us {
+  padding: 44px 0 0 78px;
+  background-color: #f2f2f2;
+  border-bottom: 5px solid #ffffff;
+}
+
+.about-us__title {
+  margin-bottom: 26px;
+  font-size: 3rem;
+  line-height: 18px;
+  font-weight: 900;
+  color: #666d89;  
+}
+
+.about-us__text {
+  margin-bottom: 45px;
+  font-size: 1.8rem;
+  line-height: 30px;
+  font-weight: 300;
+  color: #767e9e;
+}
+
+.layout-3-column {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-around;
+  width: 960px;  
+}
+
+.employee {
+  width: 300px;
+}
+
+.about-us__employee {
+  margin-right: 20px;
+}
+
+.employee__photo {
+  margin-bottom: -2px;
+}
+
+.employee__name {
+  margin-bottom: -3px;
+  height: 1.8rem;
+  overflow: hidden;
+  font-size: 1.8rem;
+  line-height: 18px;
+  font-weight: 900;
+  color: #666d89;
+}
+
+.employee__text {
+  margin-bottom: 24px;
+  font-size: 1.2rem;
+  line-height: 22px;
+  font-weight: 400;
+  color: #767e9e;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 160px;
+}
+
+.employee__social-links {
+  margin-left: -3px;
+  margin-bottom: 67px;
+}
+
+.ico {  
+  padding: 7px;
+  display: block;
+  width: 15px;
+  height: 15px; 
+  border: 1px solid #666d89;
+  border-radius: 15px;  
+}
+
+.ico:hover {
+  border: 2px solid #666d89;  
+  transition-delay: 0.1s; 
+}
+
+.ico_facebook {
+  background: url(assets/images/facebook.svg) no-repeat center;   
+}
+
+.ico_google {
+  background: url(assets/images/google.svg) no-repeat center;  
+}
+
+.ico_twitter {
+  background: url(assets/images/twitter.svg) no-repeat center;  
+}
+
+.ico_linkedin {
+  background: url(assets/images/linkedin.svg) no-repeat center;  
 }
 
