@@ -1,0 +1,14 @@
+html {
+  line-height: 1.15; /** correct the line height in all browsers */
+  font-family: "Lato", "Verdana", sans-serif;
+  font-size: 10px; /** for counting rem */
+}
+
+body {   
+  margin: 0; /** Remove the margin in all browsers.   */
+}
+
+.wrapper {
+  width: 1020px;
+  margin: auto;
+} 
