@@ -1,14 +1,132 @@
 html {
-  line-height: 1.15; /** correct the line height in all browsers */
-  font-family: "Lato", "Verdana", sans-serif;
+  line-height: 1.15; /** correct the line height in all browsers */  
   font-size: 10px; /** for counting rem */
+  font-family: "Lato", "Verdana", sans-serif;
 }
 
 body {   
-  margin: 0; /** Remove the margin in all browsers.   */
+  margin: 0; /** Remove the margin in all browsers.   */  
 }
 
 .wrapper {
   width: 1020px;
   margin: auto;
 } 
+
+.get-quote {
+  padding: 44px 0 0 79px;
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
+}
+
+.get-quote__title {  
+  margin-bottom: 26px;  
+  font-size: 3rem;
+  line-height: 18px;
+  font-weight: 900;
+  color: #f0d8d9;
+}
+
+.get-quote__text {  
+  margin-bottom: 45px;
+  width: 940px;  
+  font-size: 1.8rem;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: justify;
+  letter-spacing: 0.05px;  
+  color: #f0d8d9;
+}
+
+.contact {
+  display: flex;
+  width: 960px;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;  
+  flex-direction: column;
+  width: 620px; 
+}
+
+.form__input {
+  margin-bottom: 16px;
+  padding-left: 13px;
+  height: 34px;  
+  background-color: #d6564f;
+  border: 1px solid #d6564f;
+  border-radius: 5px;
+}
+
+.form__input::placeholder {  
+  font-size: 1.2rem; 
+  line-height: 22px; 
+  font-family: "Lato", "Verdana", sans-serif;
+  font-weight: 400;  
+  color: #f48c8f;
+}
+
+.form__input:focus {
+  outline-color: #f48c8f;
+}
+
+.form__textarea {
+  margin-bottom: 10px;
+  padding: 5px 13px;
+  height: 190px; 
+  font-size: 1.2rem; 
+  line-height: 22px; 
+  font-family: "Lato", "Verdana", sans-serif;
+  font-weight: 400;  
+  color: #f48c8f;
+  background-color: #d6564f;
+  border: 1px solid #d6564f;
+  border-radius: 5px;
+}
+
+.form__textarea:focus {
+  outline-color: #f48c8f;
+}
+
+.form__submit {
+  margin-bottom: 27px;
+  width: 150px;
+  height: 30px;
+  font-size: 1.2rem; 
+  line-height: 22px; 
+  font-family: "Lato", "Verdana", sans-serif;
+  color: #ffffff;
+  background-color: #d6564f;
+  border: 1px solid #f48c8f;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form__submit:hover {
+  cursor: pointer;
+  background-color: #ea676b;
+}
+
+.contact-information {
+  width: 320px;
+}
+
+.contact-information__title {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: -0.1px;
+  color: #f0d8d9;
+}
+
+.contact-information__text {
+  margin: 0;
+  width: 300px;
+  font-size: 1.2rem;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: justify;  
+  color: #f0d8d9;
+}
