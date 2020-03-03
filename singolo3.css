@@ -59,7 +59,7 @@ body {
   border-radius: 5px;
 }
 
-.form__input::placeholder {  
+::placeholder {  
   font-size: 1.2rem; 
   line-height: 22px; 
   font-family: "Lato", "Verdana", sans-serif;
@@ -67,22 +67,18 @@ body {
   color: #f48c8f;
 }
 
-.form__input:focus {
+.form__input:focus { 
   outline-color: #f48c8f;
 }
 
 .form__textarea {
   margin-bottom: 10px;
   padding: 5px 13px;
-  height: 190px; 
-  font-size: 1.2rem; 
-  line-height: 22px; 
-  font-family: "Lato", "Verdana", sans-serif;
-  font-weight: 400;  
-  color: #f48c8f;
+  height: 190px;   
   background-color: #d6564f;
   border: 1px solid #d6564f;
   border-radius: 5px;
+  resize: none;
 }
 
 .form__textarea:focus {
@@ -169,3 +165,63 @@ body {
   content: url(assets/images/email.svg);
 }
 
+.footer {
+  padding: 15px 0;
+  background-color: #2d303a;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 948px;
+}
+
+.footer__copyright {
+  margin-left: 5px;
+}
+
+.copyright {  
+  font-size: 1.2rem;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  color: #666d89;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 160px;
+}
+
+.ico {  
+  padding: 7px;
+  display: block;
+  width: 15px;
+  height: 15px; 
+  border: 1px solid #666d89;
+  border-radius: 15px;  
+}
+
+.ico:hover {
+  border: 2px solid #666d89;
+  transition-delay: 0.1s;   
+}
+
+.ico_facebook {
+  background: url(assets/images/facebook.svg) no-repeat center;   
+}
+
+.ico_google {
+  background: url(assets/images/google.svg) no-repeat center;  
+}
+
+.ico_twitter {
+  background: url(assets/images/twitter.svg) no-repeat center;  
+}
+
+.ico_linkedin {
+  background: url(assets/images/linkedin.svg) no-repeat center;  
+}
