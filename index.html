@@ -7,43 +7,64 @@
   <link rel="stylesheet" href="style.css">  
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <div class="wrapper header__wrapper">
       <div class="logo">
         <h1 class="logo__title">singolo<span class="logo__star">*</span></h1>
       </div>
       <nav class="header__navigation">
-        <ul class="navigation">
-          <li><a class="navigation__href navigation__href_current" href="#">home</a></li>
-          <li><a class="navigation__href" href="#">services</a></li>
-          <li><a class="navigation__href" href="#">portfolio</a></li>
-          <li><a class="navigation__href" href="#">about</a></li>
-          <li><a class="navigation__href" href="#">contact</a></li>
+        <ul class="navigation" id="navigation">
+          <li><a class="navigation__href" href="#home">home</a></li>
+          <li><a class="navigation__href" href="#services">services</a></li>                   
+          <li><a class="navigation__href" href="#portfolio">portfolio</a></li>
+          <li><a class="navigation__href" href="#about">about</a></li>
+          <li><a class="navigation__href" href="#contact">contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <div class="slider">
     <div class="wrapper slider__wrapper"> 
-      <div class="iphone-container">
-        <div class="iphone iphone_vertical slider__iphone">                 
-          <img class="iphone__image" src="assets/images/iPhone.png" alt="iphone" width="215" height="458">
-          <div class="iphone__display">
-           <img class="display__image" src="assets/images/Layer6.png" alt="display-image" width="580" height="580">
+      <div class="carousel" id="carousel">
+        <div class="iphone-container iphone-container_main iphone-container_active">
+          <div class="iphone slider__iphone">                 
+            <img class="iphone__image" src="assets/images/iPhone.png" alt="iphone" width="215" height="458">
+            <div class="iphone__display">
+            <img class="display__image" src="assets/images/Layer6.png" alt="display-image" width="580" height="580">
+            </div>
+            <img class="iphone__shadow" src="assets/images/shadow.png" alt="shadow" width="240" height="483"> 
           </div>
+          <div class="iphone iphone_horizontal slider__iphone">                    
+            <img class="iphone__image" src="assets/images/iPhone.png" alt="iphone" width="215" height="458">
+            <div class="iphone__display iphone__display_horizontal">  
+              <img class="display__image display__image_horizontal" src="assets/images/Layer5.png" alt="display-image" width="580" height="580">                     
+            </div>
+            <img class="iphone__shadow iphone__shadow_horizontal" src="assets/images/phone-horizontal-shadow.png" alt="shadow" width="483" height="240"> 
+          </div>           
         </div>
-        <div class="iphone iphone_horizontal slider__iphone">                    
-          <img class="iphone__image" src="assets/images/iPhone.png" alt="iphone" width="215" height="458">
-          <div class="iphone__display iphone__display_horizontal">  
-            <img class="display__image display__image_horizontal" src="assets/images/Layer5.png" alt="display-image" width="580" height="580">                     
+        <div class="iphone-container">
+          <div class="iphone iphone_small">
+            <img class="iphone__image" src="assets/images/iPhone.png" alt="iphone" width="215" height="458">            
+            <img class="iphone__display" src="assets/images/display.png" alt="display-image" width="201" height="354">
+            <img class="iphone__shadow" src="assets/images/shadow.png" alt="shadow" width="240" height="483">            
           </div>
-        </div>           
-      </div>      
+          <div class="iphone iphone_center">
+            <img class="iphone__image" src="assets/images/iPhone.png" alt="iphone" width="215" height="458">            
+            <img class="iphone__display" src="assets/images/display.png" alt="display-image" width="201" height="354">
+            <img class="iphone__shadow" src="assets/images/shadow.png" alt="shadow" width="240" height="483">             
+          </div> 
+          <div class="iphone iphone_small">
+            <img class="iphone__image" src="assets/images/iPhone.png" alt="iphone" width="215" height="458">            
+            <img class="iphone__display" src="assets/images/display.png" alt="display-image" width="201" height="354">
+            <img class="iphone__shadow" src="assets/images/shadow.png" alt="shadow" width="240" height="483">             
+          </div>        
+        </div>
+      </div>            
       <button class="arrow arrow_prev"></button>                              
       <button class="arrow arrow_next"></button>
     </div>
   </div>
-  <section class="our-services">
+  <section class="our-services" id="services">
     <div class="wrapper">
       <h2 class="our-services__title">our services</h2>
       <p class="our-services__text">Fusce dapibus, tellus ac cursus commodo tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo tortor mauris condimentum nibh.</p>
@@ -93,7 +114,7 @@
       </div>
     </div>
   </section>
-  <div class="portfolio"> 
+  <div class="portfolio" id="portfolio"> 
     <div class="wrapper">
       <h2 class="portfolio__title">portfolio</h2>
       <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -120,7 +141,7 @@
       </div>
     </div>
   </div>  
-  <div class="about-us">  
+  <div class="about-us" id="about">  
     <div class="wrapper">
       <h2 class="about-us__title">about us</h2>
       <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -161,7 +182,7 @@
       </div>  
     </div> 
   </div> 
-  <div class="get-quote">
+  <div class="get-quote" id="contact">
     <div class="wrapper">
       <h2 class="get-quote__title">Get a Quote</h2>
       <p class="get-quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -198,5 +219,6 @@
       </div>
     </div>
   </footer>  
+  <script src="script.js"></script>
 </body>
 </html>
