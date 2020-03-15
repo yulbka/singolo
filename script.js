@@ -67,7 +67,7 @@ slider.addEventListener('click', function(event) {
 
 let filter = document.querySelector('.filter');
 filter.addEventListener('click', function(event) {
-  filter.querySelectorAll('button').forEach(button => button.classList.remove('button_active'));
+  filter.querySelectorAll('button').forEach(button => button.classList.remove('button_active'));  
   event.target.closest('button').classList.add('button_active');
   let portfolio = document.querySelector('#portfolio-images');
   let images = Array.from(portfolio.querySelectorAll('img'));
@@ -75,5 +75,15 @@ filter.addEventListener('click', function(event) {
     return Math.random() - 0.5;
   })
   portfolio.innerHTML = '';
+  shuffledImages.forEach(image => image.classList.remove('portfolio__image_chosen'));
   shuffledImages.forEach(image => portfolio.append(image));
+})
+
+// border around portfolio image
+
+portfolio.addEventListener('click', function(event) {
+  let target = event.target.closest('img');
+  if (!target) return;
+  portfolio.querySelectorAll('img').forEach(image => image.classList.remove('portfolio__image_chosen'));
+  target.classList.add('portfolio__image_chosen');
 })

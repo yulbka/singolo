@@ -485,6 +485,11 @@ body {
   margin: 7px 19px 13px 1px;
 }
 
+.portfolio__image_chosen {
+  border: 5px solid #F06C64;
+  box-sizing: border-box;
+}
+
 .portfolio__image:nth-of-type(4n - 1) {
   margin: 7px 20px 13px 0px;
 }
