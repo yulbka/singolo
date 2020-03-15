@@ -127,24 +127,45 @@ body {
   padding: 53px 0 49px;
   background-color: #f06c64;
   border-bottom: 15px solid #ea676b;
+  transition-duration: 1s;
+}
+
+.slider_carousel {
+  background-color: #648BF0;
+  border-bottom: 15px solid #648BF0;
 }
 
 .slider__wrapper {
   position: relative;
 }
 
-.iphone-container {
-  display: none; 
+.carousel {
+  width: 100%;
+  overflow: hidden;  
+  position: relative;
 }
 
-.iphone-container_active {
-  display: flex;
-  justify-content: center;
+
+.iphone-container {
+  display: none; 
+  animation: 1s ease-in-out;
+}
+
+.iphone-container_active, .next {
+  display: flex;   
+  position: relative;   
+  padding: 0 240px 0; 
 }
 
 .iphone-container_main {
   width: 761px;
   justify-content: space-between;
+  padding: 0;
+}
+
+.next {
+  position: absolute;
+  top: 0;
 }
 
 .slider__iphone {
@@ -220,16 +241,53 @@ body {
   left: -122px;
 }
 
+.to-left {
+  animation-name: left;
+}
+
+.to-right {
+  animation-name: right;  
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.from-right {
+  animation-name: right;  
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
 .arrow {
   position: absolute;
   top: 232px;
   width: 20px;
   height: 20px;
-  border: 1px solid #f06c64;
+  border: none;
   border-bottom: 5px solid #ca4549;
   border-left: 5px solid #ca4549;
-  background-color: #f06c64;  
+  background: transparent;  
   outline: none;
+  z-index: 50;  
 }
 
 .arrow:hover {
