@@ -186,10 +186,10 @@
       <h2 class="get-quote__title">Get a Quote</h2>
       <p class="get-quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       <div class="contact">
-        <form class="form contact__form" action="#" method="post">
+        <form class="form contact__form" action="#" method="post" name="quote">
           <input class="form__input" type="text" placeholder="Name (Required)" required>
           <input class="form__input" type="email" placeholder="Email (Required)" required>
-          <input class="form__input" type="text" placeholder="Subject">
+          <input class="form__input" type="text" placeholder="Subject" name="subject">
           <textarea class="form__textarea" name="project" id="project" cols="30" rows="12" placeholder="Describe your project in detail..."></textarea>
           <input class="form__submit" type="submit" value="Send">
         </form>
@@ -217,7 +217,15 @@
         <a href="#"><span class="ico ico_linkedin"></span></a>
       </div>
     </div>
-  </footer>  
+  </footer> 
+  <div class="modal-overlay">
+    <div class="modal-window">
+      <h2 class="modal-window__title">Письмо отправлено</h2>
+      <p class="modal-window__theme"></p>
+      <p class="modal-window__description"></p>
+      <button class="btn-close">Ок</button>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

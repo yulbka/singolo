@@ -74,8 +74,7 @@ filter.addEventListener('click', function(event) {
   let shuffledImages = images.sort(function() {
     return Math.random() - 0.5;
   })
-  portfolio.innerHTML = '';
-  shuffledImages.forEach(image => image.classList.remove('portfolio__image_chosen'));
+  portfolio.innerHTML = '';  
   shuffledImages.forEach(image => portfolio.append(image));
 })
 
@@ -87,3 +86,34 @@ portfolio.addEventListener('click', function(event) {
   portfolio.querySelectorAll('img').forEach(image => image.classList.remove('portfolio__image_chosen'));
   target.classList.add('portfolio__image_chosen');
 })
+
+// modal window
+
+let modal = document.querySelector('.modal-overlay');
+let form = document.forms.quote;
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  getModalContent();
+  showModalWindow();
+  form.reset();
+})
+
+modal.addEventListener('click', function(event) {
+  let target = event.target.closest('.btn-close');
+  if (!target) return;
+  modal.classList.remove('modal-overlay_visible');
+})
+
+let getModalContent = function() {
+  let theme;
+  form.subject.value === 'Singolo' ? theme = 'Тема: Singolo': theme = 'Без темы';  
+  modal.querySelector('.modal-window__theme').innerText = theme;
+  let description;
+  form.project.value === 'Portfolio project' ? description = 'Описание: Portfolio project': description = 'Без описания';
+  modal.querySelector('.modal-window__description').innerText = description;
+}
+
+let showModalWindow = function() {
+  modal.classList.add('modal-overlay_visible');
+}
