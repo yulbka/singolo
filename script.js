@@ -107,10 +107,10 @@ modal.addEventListener('click', function(event) {
 
 let getModalContent = function() {
   let theme;
-  form.subject.value === 'Singolo' ? theme = 'Тема: Singolo': theme = 'Без темы';  
+  form.subject.value ? theme = `Тема: ${form.subject.value}`: theme = 'Без темы';  
   modal.querySelector('.modal-window__theme').innerText = theme;
   let description;
-  form.project.value === 'Portfolio project' ? description = 'Описание: Portfolio project': description = 'Без описания';
+  form.project.value ? description = `Описание: ${form.project.value}`: description = 'Без описания';
   modal.querySelector('.modal-window__description').innerText = description;
 }
 

@@ -198,6 +198,7 @@ body {
   top: 0;
   left: 0;
   z-index: 20;
+  cursor: pointer;
 }
 
 .iphone__display {
@@ -207,7 +208,8 @@ body {
   z-index: 30;
   width: 188px;
   height: 333px;
-  overflow: hidden;       
+  overflow: hidden;
+  cursor: pointer;       
 }
 
 .screen-off {
@@ -483,6 +485,7 @@ body {
 
 .portfolio__image {
   margin: 7px 19px 13px 1px;
+  cursor: pointer;
 }
 
 .portfolio__image_chosen {
