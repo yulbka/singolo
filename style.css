@@ -210,6 +210,10 @@ body {
   overflow: hidden;       
 }
 
+.screen-off {
+  z-index: 0;
+}
+
 .iphone__display_horizontal {
   top: 138px;
   left: -59px; 

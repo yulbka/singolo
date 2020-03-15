@@ -52,3 +52,13 @@ document.querySelector('.arrow_next').addEventListener('click', function() {
     showItem('from-right');
   }
 })
+
+// off-on screen phone
+
+let slider = document.querySelector('.slider');
+slider.addEventListener('click', function(event) {
+  let target = event.target.closest('.iphone__image, .iphone__display');
+  if (!target) return;
+  let screen = target.parentElement.querySelector('.iphone__display');
+  screen.classList.toggle('screen-off');
+})
