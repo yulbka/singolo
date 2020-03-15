@@ -62,3 +62,18 @@ slider.addEventListener('click', function(event) {
   let screen = target.parentElement.querySelector('.iphone__display');
   screen.classList.toggle('screen-off');
 })
+
+// mix portfolio photos
+
+let filter = document.querySelector('.filter');
+filter.addEventListener('click', function(event) {
+  filter.querySelectorAll('button').forEach(button => button.classList.remove('button_active'));
+  event.target.closest('button').classList.add('button_active');
+  let portfolio = document.querySelector('#portfolio-images');
+  let images = Array.from(portfolio.querySelectorAll('img'));
+  let shuffledImages = images.sort(function() {
+    return Math.random() - 0.5;
+  })
+  portfolio.innerHTML = '';
+  shuffledImages.forEach(image => portfolio.append(image));
+})

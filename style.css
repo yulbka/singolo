@@ -456,7 +456,10 @@ body {
 } 
 
 .button:focus {
-  outline: none;
+  outline: none;  
+}
+
+.button_active {
   color: #dedede;
   border: 1px solid #dedede;
 }
