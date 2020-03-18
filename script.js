@@ -2,9 +2,28 @@
 
 let navigation = document.getElementById('navigation');
 navigation.addEventListener('click', function(event) {
-  navigation.querySelectorAll('a').forEach(elem => elem.classList.remove('active'));
-  event.target.closest('a').classList.add('active');
-})
+  navigation.querySelectorAll('a').forEach(elem => elem.classList.remove('navigation__href_active'));
+  event.target.closest('a').classList.add('navigation__href_active');
+}) 
+
+document.addEventListener('scroll', onScroll);
+function onScroll(event) {
+  let currentPosition = window.scrollY;
+  let scrollBlocks = document.querySelectorAll('.scroll');
+  let links = document.querySelectorAll('.navigation__href');
+  let navBarHeight = document.querySelector('#home').offsetHeight;
+
+  scrollBlocks.forEach((block) => {
+    if ((block.offsetTop - navBarHeight) <= currentPosition && (block.offsetTop + block.offsetHeight) > currentPosition) {
+      links.forEach ((link) => {
+        link.classList.remove('navigation__href_active');
+        if (block.getAttribute('id') === link.getAttribute('href').slice(1)) {
+          link.classList.add('navigation__href_active');
+        }
+      })
+   }
+  });
+}
 
 // slider carousel
 

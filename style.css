@@ -49,6 +49,7 @@ html {
 body {   
   margin: 0; /** Remove margins and paddings in all browsers.   */
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .wrapper {  
@@ -65,7 +66,10 @@ body {
 
 .header {
   background-color: #2d303a;
-  border-bottom: 6px solid #323746 ;
+  border-bottom: 6px solid #323746;
+  position: sticky;
+  top: 0;
+  z-index: 60;
 }
 
 .header__navigation {
@@ -114,13 +118,13 @@ body {
   color: #ffffff;  
 }
 
-.navigation__href:hover {
-  cursor: pointer;
-  color:  #95b0dd;
+.navigation__href_active {
+  color: #f06c64;
 }
 
-.navigation__href.active {
-  color: #f06c64;
+.navigation__href:not(.navigation__href_active):hover {
+  cursor: pointer;
+  color:  #95b0dd;
 }
 
 .slider {  
