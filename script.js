@@ -89,7 +89,7 @@ filter.addEventListener('click', function(event) {
   filter.querySelectorAll('button').forEach(button => button.classList.remove('button_active'));  
   event.target.closest('button').classList.add('button_active');
   let portfolio = document.querySelector('#portfolio-images');
-  let images = Array.from(portfolio.querySelectorAll('img'));
+  let images = Array.from(portfolio.querySelectorAll('li'));
   let shuffledImages = images.sort(function() {
     return Math.random() - 0.5;
   })
