@@ -473,12 +473,19 @@ body {
 
 .layout-3-column {
   display: flex;
-  flex-flow: row wrap;         
+  flex-flow: row wrap;  
+  max-width: 960px;      
 }
 
 .service {
-  display: flex;
-  width: 320px;
+  display: flex;  
+  flex: 1 0 31%;
+  margin-right: calc((100% - 93%) / 3);
+}
+
+.service__content {
+  flex-basis: 77%;
+  margin-left: 19px;
 }
 
 .service__title {
@@ -491,8 +498,7 @@ body {
 }
 
 .service__text {
-  margin: 0 0 32px;
-  width: 219px;
+  margin: 0 0 32px;  
   max-height: 64px;
   overflow: hidden;
   font-size: 1.2rem;
@@ -504,31 +510,38 @@ body {
 
 .icon {
   display: inline-block;
-  width: 80px; 
+  width: 62px; 
+  flex-basis: 21%;  
 }
 
 .icon_pen {
   background: url(assets/images/pen.svg) no-repeat;
+  background-size: contain;
 }
 
 .icon_phone {
   background: url(assets/images/phone.svg) no-repeat;
+  background-size: contain;
 }
 
 .icon_bulb {
   background: url(assets/images/bulb.svg) no-repeat;
+  background-size: contain;
 }
 
 .icon_bubble {
   background: url(assets/images/bubble.svg) no-repeat;
+  background-size: contain;
 }
 
 .icon_heart {
   background: url(assets/images/heart.svg) no-repeat;
+  background-size: contain;
 }
 
 .icon_star {
   background: url(assets/images/star.svg) no-repeat;
+  background-size: contain;
 }
 
 /* singolo2 styles */
@@ -722,19 +735,19 @@ body {
 }
 
 .ico_facebook {
-  background: url(assets/images/facebook.svg) no-repeat center;   
+  background: url(assets/images/facebook.svg) no-repeat center;     
 }
 
 .ico_google {
-  background: url(assets/images/google.svg) no-repeat center;  
+  background: url(assets/images/google.svg) no-repeat center;   
 }
 
 .ico_twitter {
-  background: url(assets/images/twitter.svg) no-repeat center;  
+  background: url(assets/images/twitter.svg) no-repeat center;   
 }
 
 .ico_linkedin {
-  background: url(assets/images/linkedin.svg) no-repeat center;  
+  background: url(assets/images/linkedin.svg) no-repeat center;    
 }
 
 /* singolo3 styles*/
@@ -1078,12 +1091,12 @@ body {
   }
 
   .layout-3-column {
-    width: 100vw;
+    width: 91vw;
   }
 
-  .service {
-    width: unset;
-    margin-right: calc((100vw - 664px) / 2);   
+  .service {    
+    flex: 1 0 42%;
+    margin-right: calc((100% - 85%) / 2); 
   }
 
   .portfolio {
@@ -1202,7 +1215,7 @@ body {
   }
 
   .logo__mobile-menu {    
-    transform: translate(-120%, -50%);    
+    transform: translate(-110%, -50%);    
   }
   
   .logo_animationed {
@@ -1214,8 +1227,74 @@ body {
     margin-left: 15%;
   }
 
+  .our-services {
+    padding: 39px 43px 19px 32px;
+  }
+
+  .layout-3-column {
+    width: 83.73vw;
+    flex-direction: column;
+  }  
+
+  .portfolio {
+    padding: 30px 30px 40px;
+  }
+
+  .layout-4-column li {
+    margin: 5px;
+    flex: 1 0 45%;
+  }
+
+  .about-us {
+    padding: 37px 30px 38px;
+  }
+
+  .employee {
+    width: auto;
+  }
+
+  .employee__photo {
+    width: 83.73vw;
+    height: 83.73vw;
+  }
+
+  .employee__social-links {
+    margin: 0 0 30px 1px;
+  }
+
+  .get-quote {
+    padding: 30px;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .form {
+    width: 83.73vw;
+  }
+
+  .form__submit {
+    width: 83.73vw;
+    height: 50px;
+  }
+
+  .contact-information {
+    width: 83.73vw;
+  }
+
+  .footer__wrapper {
+    justify-content: center;
+  }
+
+  .copyright {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 374px) {
-  
+  .logo__mobile-menu {    
+    transform: translate(-100%, -50%);    
+  }
 }

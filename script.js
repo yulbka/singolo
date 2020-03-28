@@ -6,7 +6,7 @@ header.addEventListener('click', function(event) {
   if (!target) return;   
   header.querySelectorAll('a').forEach(elem => elem.classList.remove('navigation__href_active'));
   target.classList.add('navigation__href_active');  
-  closeMobileMenu();
+  if (target.classList.contains('mobile-menu__href')) closeMobileMenu();
 })
 
 document.addEventListener('scroll', onScroll);  
